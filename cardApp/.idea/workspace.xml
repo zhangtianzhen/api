@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/DATA_BASE/sqlQuery_login_handoverAndMatter.py" line="11" />
+    <bookmark url="file://$PROJECT_DIR$/DATA_BASE/sqlQuery_login_handoverAndMatter.py" line="119" />
+    <bookmark url="file://$PROJECT_DIR$/getData/test.py" line="23" />
+    <bookmark url="file://$PROJECT_DIR$/DATA_BASE/personal" line="1" />
+    <bookmark url="file://$PROJECT_DIR$/config/requestConfigtest.py" line="199" />
+    <bookmark url="file://$PROJECT_DIR$/config/requestConfigtest.py" line="316" />
+    <bookmark url="file://$PROJECT_DIR$/config/requestConfigtest.py" line="732" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8daecd7e-6971-47ea-83dc-bca01189d36e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/cardApp$ThroughCaseGet.coverage" NAME="ThroughCaseGet Coverage Results" MODIFIED="1538008110393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/replayData" />
+    <SUITE FILE_PATH="coverage/cardApp$test.coverage" NAME="test Coverage Results" MODIFIED="1537627590736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData" />
+    <SUITE FILE_PATH="coverage/cardApp$test6.coverage" NAME="test6 Coverage Results" MODIFIED="1538748060333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData" />
+    <SUITE FILE_PATH="coverage/cardApp$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1538085932897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData" />
+    <SUITE FILE_PATH="coverage/cardApp$newReplay.coverage" NAME="newReplay Coverage Results" MODIFIED="1538461849706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/replayData" />
+    <SUITE FILE_PATH="coverage/cardApp$sqlQuery.coverage" NAME="sqlQuery Coverage Results" MODIFIED="1537689570584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DATA_BASE" />
+    <SUITE FILE_PATH="coverage/cardApp$Request_distribute.coverage" NAME="Request_distribute Coverage Results" MODIFIED="1538614663247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/handle" />
+    <SUITE FILE_PATH="coverage/cardApp$sqlQuery_login_handoverAndMatter.coverage" NAME="sqlQuery_login_handoverAndMatter Coverage Results" MODIFIED="1537311851809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DATA_BASE" />
+    <SUITE FILE_PATH="coverage/cardApp$requestConfigtest.coverage" NAME="requestConfigtest Coverage Results" MODIFIED="1538661580083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
+    <SUITE FILE_PATH="coverage/cardApp$getReplayData.coverage" NAME="getReplayData Coverage Results" MODIFIED="1537784326913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/replayData" />
+    <SUITE FILE_PATH="coverage/cardApp$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1538704014095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData" />
+    <SUITE FILE_PATH="coverage/cardApp$data.coverage" NAME="data Coverage Results" MODIFIED="1537514674019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData" />
+    <SUITE FILE_PATH="coverage/cardApp$readExcel__1_.coverage" NAME="readExcel (1) Coverage Results" MODIFIED="1537060156104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DATA_BASE" />
+    <SUITE FILE_PATH="coverage/cardApp$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1538645924375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData" />
+    <SUITE FILE_PATH="coverage/cardApp$requestConfig.coverage" NAME="requestConfig Coverage Results" MODIFIED="1537976040732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
+    <SUITE FILE_PATH="coverage/cardApp$readExcel.coverage" NAME="readExcel Coverage Results" MODIFIED="1538618579624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DATA_BASE" />
+    <SUITE FILE_PATH="coverage/cardApp$getReplayDatatwo.coverage" NAME="getReplayDatatwo Coverage Results" MODIFIED="1537784276516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/replayDatatwo" />
+    <SUITE FILE_PATH="coverage/cardApp$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1537777779754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData" />
+    <SUITE FILE_PATH="coverage/cardApp$readJSON.coverage" NAME="readJSON Coverage Results" MODIFIED="1537391389438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DATA_BASE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1915546207">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.48" value="3" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.open.time.95" value="1" />
+          <entry key="project.opened" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="jpg" value="4" />
+          <entry key="json" value="2" />
+          <entry key="personal" value="3" />
+          <entry key="pstat" value="1" />
+          <entry key="py" value="153" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="4" />
+          <entry key="JSON" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Profiler Session" value="1" />
+          <entry key="Python" value="153" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="3" />
+          <entry key="dummy" value="42" />
+          <entry key="json" value="36" />
+          <entry key="personal" value="58" />
+          <entry key="py" value="42770" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="36" />
+          <entry key="PLAIN_TEXT" value="100" />
+          <entry key="Python" value="42765" />
+          <entry key="RegExp" value="3" />
+          <entry key="SQL" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+    <session id="-1109005798">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="37" />
+          <entry key="personal" value="1" />
+          <entry key="py" value="539" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="Python" value="539" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="personal" value="1" />
+          <entry key="py" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+    <session id="1758372936">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="cardApp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/requestConfig.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1824">
+              <caret line="78" column="40" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getData/test6.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2016">
+              <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
+              <folding>
+                <element signature="e#1#12#0" expanded="true" />
+                <marker date="1538661632542" expanded="true" signature="635:637" ph="..." />
+                <marker date="1538661632542" expanded="true" signature="635:639" ph="..." />
+                <marker date="1538661632542" expanded="true" signature="635:643" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getData/test1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/requestConfigtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="734" column="62" selection-start-line="734" selection-start-column="62" selection-end-line="734" selection-end-column="62" />
+              <folding>
+                <element signature="e#32#45#0" expanded="true" />
+                <marker date="1538704013283" expanded="true" signature="4732:4917" ph="..." />
+                <marker date="1538704013283" expanded="true" signature="6110:6173" ph="..." />
+                <marker date="1538704013283" expanded="true" signature="14669:14827" ph="..." />
+                <marker date="1538704013283" expanded="true" signature="14928:14941" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/replayDatatwo/getReplayDatatwo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="38" column="59" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/execlconfig.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2016">
+              <caret line="84" column="13" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="13" />
+              <folding>
+                <marker date="1538618778579" expanded="true" signature="666:693" ph="..." />
+                <marker date="1538618778579" expanded="true" signature="738:740" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DATA_BASE/readExcel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/replayData/ThroughCaseGet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="27" />
+              <folding>
+                <element signature="e#216#226#0" expanded="true" />
+                <marker date="1538058690113" expanded="true" signature="852:859" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DATA_BASE/readJSON.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getData/test2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8208">
+              <caret line="345" column="8" lean-forward="true" selection-start-line="345" selection-start-column="8" selection-end-line="345" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>IsOwner</find>
+      <find>tr</find>
+      <find>tru</find>
+      <find>F</find>
+      <find>ImageList</find>
+      <find>issueclass</find>
+      <find>issue</find>
+      <find>IssueMalfunctionClassId</find>
+      <find>UserToken</find>
+      <find>UserName</find>
+      <find>request</find>
+      <find>info</find>
+      <find>print</find>
+      <find>GetHandoverHouseDateList</find>
+      <find>保存当前接口请求后 响应的数据</find>
+      <find>提取当前接口的响应数据并保存</find>
+      <find>excl</find>
+      <find>GetHandoverHouseList</find>
+      <find>MalfunctionClassId</find>
+      <find>null</find>
+      <find>MalfunctionId</find>
+      <find>true</find>
+      <find>false</find>
+      <find>token</find>
+      <find>EditPassword</find>
+      <find>ResultType</find>
+      <find>GetHandoverHouseSetting</find>
+      <find>GetMalfunctionClass1</find>
+      <find>StateCode</find>
+      <find>body_he</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>self.info</replace>
+      <replace>excel</replace>
+      <replace>None</replace>
+      <replace>True</replace>
+      <replace>False</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/util/readExcel.py" />
+        <option value="$PROJECT_DIR$/DATA_BASE/execlconfig.py" />
+        <option value="$PROJECT_DIR$/getData/data.py" />
+        <option value="$PROJECT_DIR$/DATA_BASE/sqlQuery_login_handoverAndMatter.py" />
+        <option value="$PROJECT_DIR$/DATA_BASE/readJSON.py" />
+        <option value="$PROJECT_DIR$/DATA_BASE/readTEXT.py" />
+        <option value="$PROJECT_DIR$/DATA_BASE/personal" />
+        <option value="$PROJECT_DIR$/getData/beifen.py" />
+        <option value="$PROJECT_DIR$/DATA_BASE/data.json" />
+        <option value="$PROJECT_DIR$/getData/test.py" />
+        <option value="$PROJECT_DIR$/config/api.py" />
+        <option value="$PROJECT_DIR$/DATA_BASE/sqlQuery.py" />
+        <option value="$PROJECT_DIR$/replayDatatwo/getReplayDatatwo.py" />
+        <option value="$PROJECT_DIR$/replayData/getReplayData.py" />
+        <option value="$PROJECT_DIR$/config/requestConfig.py" />
+        <option value="$PROJECT_DIR$/getData/test5.py" />
+        <option value="$PROJECT_DIR$/replayData/ThroughCaseGet.py" />
+        <option value="$PROJECT_DIR$/getData/test4.py" />
+        <option value="$PROJECT_DIR$/getData/test1.py" />
+        <option value="$PROJECT_DIR$/config/__init__.py" />
+        <option value="$PROJECT_DIR$/DATA_BASE/__init__.py" />
+        <option value="$PROJECT_DIR$/getData/__init__.py" />
+        <option value="$PROJECT_DIR$/handle/__init__.py" />
+        <option value="$PROJECT_DIR$/replayData/__init__.py" />
+        <option value="$PROJECT_DIR$/replayDatatwo/__init__.py" />
+        <option value="$PROJECT_DIR$/util/__init__.py" />
+        <option value="$PROJECT_DIR$/Business_Tier/__init__.py" />
+        <option value="$PROJECT_DIR$/util/readSql.py" />
+        <option value="$PROJECT_DIR$/DATA_BASE/readExcel.py" />
+        <option value="$PROJECT_DIR$/config/execlconfig.py" />
+        <option value="$PROJECT_DIR$/getData/test2.py" />
+        <option value="$PROJECT_DIR$/handle/Request_distribute.py" />
+        <option value="$PROJECT_DIR$/replayData/newReplay.py" />
+        <option value="$PROJECT_DIR$/getData/test6.py" />
+        <option value="$PROJECT_DIR$/config/requestConfigtest.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="274" />
+    <option name="y" value="110" />
+    <option name="width" value="1296" />
+    <option name="height" value="1092" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cardApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Business_Tier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardApp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardApp" type="462c0819:PsiDirectoryNode" />
+              <item name="DATA_BASE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardApp" type="462c0819:PsiDirectoryNode" />
+              <item name="getData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardApp" type="462c0819:PsiDirectoryNode" />
+              <item name="handle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardApp" type="462c0819:PsiDirectoryNode" />
+              <item name="replayData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardApp" type="462c0819:PsiDirectoryNode" />
+              <item name="replayDatatwo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardApp" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://H:/cardApp/getData/test6.py" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\cardApp\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\cardApp\DATA_BASE" />
+      <recent name="H:\cardApp\config" />
+      <recent name="H:\cardApp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.test6">
+    <configuration name="readExcel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cardApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DATA_BASE" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DATA_BASE/readExcel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="requestConfigtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cardApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/config" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config/requestConfigtest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cardApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getData" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getData/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cardApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getData" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getData/test5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cardApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getData" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getData/test6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.test6" />
+      <item itemvalue="Python.requestConfigtest" />
+      <item itemvalue="Python.readExcel" />
+      <item itemvalue="Python.test2" />
+      <item itemvalue="Python.test5" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test6" />
+        <item itemvalue="Python.test5" />
+        <item itemvalue="Python.requestConfigtest" />
+        <item itemvalue="Python.test2" />
+        <item itemvalue="Python.readExcel" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8daecd7e-6971-47ea-83dc-bca01189d36e" name="Default Changelist" comment="" />
+      <created>1537022320616</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537022320616</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17966281" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6268657" weight="0.3253796" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.15778251" side_tool="true" weight="0.47613883" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.37313432" side_tool="true" weight="0.5021692" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.49840087" weight="0.3286334" />
+      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.49413645" weight="0.3991323" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4989339" weight="0.3286334" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1108742" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49946696" visible="true" weight="0.35427952" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.47562298" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.0" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="    print(type(self.keyValue))" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlrd/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/DATA_BASE/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_BASE/personal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="279" selection-start-column="268" selection-end-column="279" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/python3.6/Lib/site-packages/xlrd/sheet.py" />
+    <entry file="file://H:/python3.6/Lib/site-packages/requests/api.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1911106515/builtins.py" />
+    <entry file="file://H:/python3.6/Lib/site-packages/jsonpath_rw/jsonpath.py" />
+    <entry file="file://H:/python3.6/Lib/site-packages/jsonpath_rw/parser.py" />
+    <entry file="file://$PROJECT_DIR$/config/text.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_BASE/sqlQuery_login_handoverAndMatter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="175" column="57" selection-start-line="190" selection-start-column="4" selection-end-line="192" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/python3.6/Lib/sre_parse.py" />
+    <entry file="file://$PROJECT_DIR$/getData/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getData/beifen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getData/test4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replayData/getReplayData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replayData/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replayDatatwo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business_Tier/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_BASE/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handle/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getData/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="1657" selection-start-line="1657" selection-end-line="1657" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handle/Request_distribute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replayData/newReplay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_BASE/sqlQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_BASE/readTEXT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/readSql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getData/test5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="98" column="94" selection-start-line="98" selection-start-column="94" selection-end-line="98" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getData/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/requestConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="78" column="40" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getData/test6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#12#0" expanded="true" />
+            <marker date="1538661632542" expanded="true" signature="635:637" ph="..." />
+            <marker date="1538661632542" expanded="true" signature="635:639" ph="..." />
+            <marker date="1538661632542" expanded="true" signature="635:643" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replayDatatwo/getReplayDatatwo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/execlconfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="84" column="13" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="13" />
+          <folding>
+            <marker date="1538618778579" expanded="true" signature="666:693" ph="..." />
+            <marker date="1538618778579" expanded="true" signature="738:740" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_BASE/readExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replayData/ThroughCaseGet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="e#216#226#0" expanded="true" />
+            <marker date="1538058690113" expanded="true" signature="852:859" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_BASE/readJSON.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getData/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8208">
+          <caret line="345" column="8" lean-forward="true" selection-start-line="345" selection-start-column="8" selection-end-line="345" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getData/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/requestConfigtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="734" column="62" selection-start-line="734" selection-start-column="62" selection-end-line="734" selection-end-column="62" />
+          <folding>
+            <element signature="e#32#45#0" expanded="true" />
+            <marker date="1538704013283" expanded="true" signature="4732:4917" ph="..." />
+            <marker date="1538704013283" expanded="true" signature="6110:6173" ph="..." />
+            <marker date="1538704013283" expanded="true" signature="14669:14827" ph="..." />
+            <marker date="1538704013283" expanded="true" signature="14928:14941" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
