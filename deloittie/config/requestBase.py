@@ -141,7 +141,8 @@ class API(BaseConfig):
 
     def longin1(self,method=None,need=None,thisApi=None,key=None,add1=None):
         try:
-            thisApi = eval(thisApi)
+            if type(thisApi) == str:
+                thisApi = eval(thisApi)
             self.GetUserLoginInfo(thisApi)  # 生成哈希值
             UserName = {"Username":self.md5.get("UserName")}
             HashedValue = {"HashedValue":self.HashedValue}
@@ -260,18 +261,32 @@ class API(BaseConfig):
         #return  {"StateCode": 1001, "StateMsg": "成功", "ResultType": 1}
 
 
-    def getTeamUplist(self,method=None,need=None,thisApi=None,key=None,add1=None): #获取组队ID
+    def joinTeamByhandle(self,method=None,need=None,thisApi=None,key=None,add1=None): #人工填写id方式邀请入队
         thisApi = eval(thisApi)
         ret = self.body_headers(method,thisApi)
         result = self.sendRequest.Post(ret[0],ret[1])
         return result
 
+
+
+
     def getTeamUplist1(self, method=None, need=None, thisApi=None, key=None, add1=None):  # 获取组队ID
-        thisApi = eval(thisApi)
-        ret = self.body_headers(method, thisApi)
+        self.longin1(method="UserLogin", thisApi=key)
+        if type(thisApi) == str:
+            thisApi = eval(thisApi)
+        ret = self.body_headers(method,thisApi)
         result = self.sendRequest.Post(ret[0], ret[1])
         for i in result["ResultData"]["TeamUpListEntity"]:
-            if i["TeamUpType"] == 3 and i["FromUserId"] == 61:  # 这里的FromUserId 不能写死
-                return i["TeamUpId"]
+            if i["TeamUpType"] == 3:  # 这里的FromUserId 不能写死
+                return i["TeamUpItemEntity"][0]["TeamUpAgreeStateId"]
 
+
+    def confirmJoin(self,method=None, need=None, thisApi=None, key=None, add1=None): #接受组队邀请并入队
+        need = self.decompression(need)
+        TeamUpAgreeStateId = self.getTeamUplist1(**need[0])
+        thisApi = eval(thisApi)
+        thisApi.update({"TeamUpAgreeStateId":TeamUpAgreeStateId})
+        ret = self.body_headers(method,thisApi)
+        result = self.sendRequest.Post(ret[0],ret[1])
+        return result
 
