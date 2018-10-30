@@ -262,9 +262,7 @@ class API(BaseConfig):
 
 
     def joinTeamByhandle(self,method=None,need=None,thisApi=None,key=None,add1=None): #人工填写id方式邀请入队
-
-        if type(thisApi) == str:
-            thisApi = eval(thisApi)
+        thisApi = eval(thisApi)
         ret = self.body_headers(method,thisApi)
         result = self.sendRequest.Post(ret[0],ret[1])
         return result
@@ -284,14 +282,9 @@ class API(BaseConfig):
 
 
     def confirmJoin(self,method=None, need=None, thisApi=None, key=None, add1=None): #接受组队邀请并入队
-
-        if type(need) == str:
-            need = self.decompression(need)
-            TeamUpAgreeStateId = self.getTeamUplist1(**need[0])
-        else:
-            TeamUpAgreeStateId = self.getTeamUplist1(need)
-        if type(thisApi) == str:
-            thisApi = eval(thisApi)
+        need = self.decompression(need)
+        TeamUpAgreeStateId = self.getTeamUplist1(**need[0])
+        thisApi = eval(thisApi)
         thisApi.update({"TeamUpAgreeStateId":TeamUpAgreeStateId})
         ret = self.body_headers(method,thisApi)
         result = self.sendRequest.Post(ret[0],ret[1])
@@ -299,47 +292,33 @@ class API(BaseConfig):
 
 
     def GetMyTeamInfo(self,method=None, need=None, thisApi=None, key=None, add1=None):
-        self.longin1(method="UserLogin", thisApi=key)
+        self.longin1(method="UserLogin",thisApi=key)
         ret = self.body_headers(method,thisApi)
         result = self.sendRequest.Post(ret[0],ret[1])
         return result["ResultData"]["TeamId"]
 
-    def teamRetreat(self,method=None, need=None, thisApi=None, key=None, add1=None): #退出队伍第二步
+    def teamRetreat(self,method=None, need=None, thisApi=None, key=None, add1=None): #退出队伍
         need = self.decompression(need)
-        TeamId=self.GetMyTeamInfo(**need[0])
+        TeamId = self.GetMyTeamInfo(**need[0])
         ret = self.body_headers(method,{"TeamId":TeamId})
         result = self.sendRequest.Post(ret[0],ret[1])
         return result
 
-
     def ConfirmJoinForManay(self, method=None,need=None, thisApi=None, key=None, add1=None): #邀请多人组队
         need = self.decompression(need)
-        ToUserId = eval(key)["ToUserId"]
-        UserName = eval(key)["UserName"]
-        """
-               将发送申请,同意申请，邀请别人申请放在一个方法里面 
-               :param method: 
-               :param need: 
-               :param thisApi: 
-               :param key: 
-               :param add1: 
-               :return: 
-               """""
-        for i in range(len(ToUserId)):
-            #
-            # self.longin1(**need[1])
-            # need[0]["thisApi"]["ToUserId"] = ToUserId[i]
-            # result = self.joinTeamByhandle(**need[0]) #发送组队请求
-            # list1 = []
-            # if result['ResultData']["ResultType"] == 1: #发送成功 开始处理组队
-                key1 = {"UserName": UserName[i], "password": "a123456"}
-            #     list1.append(key1)
-                needs= {"method": "GetTeamUpList", "thisApi": {"page": 1, "CurrentServerTime": "2015-08-01T00:00:00"}}
-                needs.update(key1)
+        # print(key)
 
-                self.confirmJoin(method="TeamUpStateOperation",thisApi={"AgreeState":1},need=needs)
-           # break
-        return {"StateCode": 1001, "StateMsg": "成功", "ResultType": 1}
+        for i in eval(key)["ToUserId"]:
+            need[0]["thisApi"]["ToUserId"] = i
+            print(need[0])
+        # print(need[1])
+        # ret =  self.joinTeamByhandle(**need[0])
+        return {"StateCode":1001,"StateMsg":"成功","ResultType":1}
+
+
+
+
+
 
 
 
