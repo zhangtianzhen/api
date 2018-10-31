@@ -5,6 +5,7 @@ import os
 import hashlib
 from jsonpath_rw import jsonpath,parse
 import  time
+import copy
 MasterSecret = "CTGi*7d54Fs*eruieud545Jgsdudb===Yhdt6"
 AppEstateId =  "A53F512B2108EAD5"
 Version = "1.0.0"
@@ -273,7 +274,9 @@ class API(BaseConfig):
 
 
     def getTeamUplist1(self, method=None, need=None, thisApi=None, key=None, add1=None):  # 获取组队ID
+
         self.longin1(method="UserLogin", thisApi=key)
+
         if type(thisApi) == str:
             thisApi = eval(thisApi)
         ret = self.body_headers(method,thisApi)
@@ -282,23 +285,38 @@ class API(BaseConfig):
             if i["TeamUpType"] == 3:  # 这里的FromUserId 不能写死
                 return i["TeamUpItemEntity"][0]["TeamUpAgreeStateId"]
 
+    def getTeamUplist2(self, method=None, need=None, thisApi=None, key=None, add1=None):  # 获取组队ID
+
+        self.longin1(method="UserLogin", thisApi=key)
+
+        if type(thisApi) == str:
+            thisApi = eval(thisApi)
+        ret = self.body_headers(method,thisApi)
+        result = self.sendRequest.Post(ret[0], ret[1])
+        print(json.dumps(result,indent=2))
+        return {"StateCode":1001,"StateMsg":"成功","ResultType":1}
+
+
 
     def confirmJoin(self,method=None, need=None, thisApi=None, key=None, add1=None): #接受组队邀请并入队
-
-        if type(need) == str:
+        TeamUpAgreeStateId = None
+        if type(need) == str and need !=None:
             need = self.decompression(need)
             TeamUpAgreeStateId = self.getTeamUplist1(**need[0])
-        else:
+        elif type(need) == dict and need !=None:
             TeamUpAgreeStateId = self.getTeamUplist1(need)
         if type(thisApi) == str:
             thisApi = eval(thisApi)
-        thisApi.update({"TeamUpAgreeStateId":TeamUpAgreeStateId})
+        if TeamUpAgreeStateId !=None:
+            thisApi.update({"TeamUpAgreeStateId":TeamUpAgreeStateId})
+
         ret = self.body_headers(method,thisApi)
         result = self.sendRequest.Post(ret[0],ret[1])
         return result
 
 
     def GetMyTeamInfo(self,method=None, need=None, thisApi=None, key=None, add1=None):
+        """退出隊伍第一步"""
         self.longin1(method="UserLogin", thisApi=key)
         ret = self.body_headers(method,thisApi)
         result = self.sendRequest.Post(ret[0],ret[1])
@@ -312,7 +330,55 @@ class API(BaseConfig):
         return result
 
 
-    def ConfirmJoinForManay(self, method=None,need=None, thisApi=None, key=None, add1=None): #邀请多人组队
+    def ConfirmJoinForManay(self, method=None,need=None, thisApi=None, key=None, add1=None):
+        self.longin1(method = "UserLogin",thisApi=thisApi)
+        info = {"TeamName":"接口发出的组队邀请","ToUserMessage":"APItest","ToUserId":""}
+        login = {"password":"a123456"}
+        GetTeamUpList = {"page": 1, "CurrentServerTime": "2015-08-01T00:00:00"}
+        agree = {"AgreeState":1}
+        ToUserId,UserNames  = eval(key)["ToUserId"],eval(key)["UserName"]
+        list1 = []
+        for i in UserNames:
+            a = copy.deepcopy(info)
+            list1.append(a)
+
+        for i in range(len(list1)):
+            list1[i]["ToUserId"]=ToUserId[i]
+        js = 0
+        token = []
+
+        start = 0
+        while start <= len(UserNames)-1:
+            # for i in list1:
+
+            ret = self.joinTeamByhandle(method="TeamInvite",thisApi=list1[start])["ResultData"]["ResultType"] #發送组队申请
+
+            if ret == 1: #成功接收到组队邀请，进入被邀请人同意并加入队伍阶段
+                ret = self.getTeamUplist1(method="GetTeamUpList",thisApi=GetTeamUpList,key={"UserName":UserNames[js],"password":"a123456"}) #获取组队id
+                agree.update({"TeamUpAgreeStateId":ret})
+                compleJoin = self.confirmJoin(method="TeamUpStateOperation",thisApi=agree) #加入队伍
+               # js += 1
+                if compleJoin['ResultData'].get("ResultType") == 1: #如果加入了队伍
+                    token.append(self.info) #添加一个用户信息 用于邀请用户加入队伍时候使用
+                    #Agree.append()
+            start += 1
+            ret = self.joinTeamByhandle(method="TeamInvite", thisApi=list1[start])["ResultData"]["ResultType"]  # 發送组队申请
+
+            for i in token:
+                i.update(GetTeamUpList)
+                body = super(API,self).body("GetTeamUpList",i)
+                headers = super(API,self).headers("GetTeamUpList")
+                result = self.sendRequest.Post(body,headers)
+                for i in result["ResultData"]["TeamUpListEntity"]:
+                    if i["TeamUpType"] == 3:  # 这里的FromUserId 不能写死
+                        return i["TeamUpItemEntity"][0]["TeamUpAgreeStateId"]
+
+            break
+
+
+        return {"StateCode": 1001, "StateMsg": "成功", "ResultType": 1}
+
+    def ConfirmJoinForManay1(self, method=None,need=None, thisApi=None, key=None, add1=None): #邀请多人组队
         need = self.decompression(need)
         ToUserId = eval(key)["ToUserId"]
         UserName = eval(key)["UserName"]
