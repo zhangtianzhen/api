@@ -354,8 +354,6 @@ class API(BaseConfig):
 
             newStart = start
             end = 0
-            # if flag != 1:
-            #     newStart += 1
             while end<10:
                 self.longin1(method="UserLogin", thisApi=thisApi)
                 ret = self.joinTeamByhandle(method="TeamInvite", thisApi=list1[newStart])["ResultData"]["ResultType"]  # 發送组队申请
@@ -421,34 +419,58 @@ class API(BaseConfig):
 
         return finall
 
-    def ConfirmJoinForManay1(self, method=None,need=None, thisApi=None, key=None, add1=None): #邀请多人组队
-        need = self.decompression(need)
-        ToUserId = eval(key)["ToUserId"]
-        UserName = eval(key)["UserName"]
-        """
-               将发送申请,同意申请，邀请别人申请放在一个方法里面 
-               :param method: 
-               :param need: 
-               :param thisApi: 
-               :param key: 
-               :param add1: 
-               :return: 
-               """""
-        for i in range(len(ToUserId)):
-            #
-            # self.longin1(**need[1])
-            # need[0]["thisApi"]["ToUserId"] = ToUserId[i]
-            # result = self.joinTeamByhandle(**need[0]) #发送组队请求
-            # list1 = []
-            # if result['ResultData']["ResultType"] == 1: #发送成功 开始处理组队
-                key1 = {"UserName": UserName[i], "password": "a123456"}
-            #     list1.append(key1)
-                needs= {"method": "GetTeamUpList", "thisApi": {"page": 1, "CurrentServerTime": "2015-08-01T00:00:00"}}
-                needs.update(key1)
+    def TeamApply(self, method=None, need=None, thisApi=None, key=None, add1=None):  # 申请入队 (1)
+        ret = self.body_headers("TeamApply", thisApi=thisApi)
+        result = self.sendRequest.Post(ret[0], ret[1])  # 发送申请入队
+        if result["ResultData"]["ResultType"] == 1:
+            return "ok"
+        return None
 
-                self.confirmJoin(method="TeamUpStateOperation",thisApi={"AgreeState":1},need=needs)
-           # break
-        return {"StateCode": 1001, "StateMsg": "成功", "ResultType": 1}
+    def TeamUpStateOperation(self, method=None, need=None, thisApi=None, key=None, add1=None):  # 获取申请入队的用户id(2)
+        num, toUserId = len(key), add1
+        parameter = {"page": 1, "CurrentServerTime": "2015-08-01T00:00:00"}
+        parameter.update(self.info)  # 加入用户token,userid
+        body = super(API, self).body(method="GetTeamUpList", dict1=parameter)
+        header = super(API, self).headers(method="GetTeamUpList")
+        result = self.sendRequest.Post(body, header)  # 获取申请入队信息
+        get = result["ResultData"]["TeamUpListEntity"]
+        statusId = []
+        for i in get:
+            listNum = len(i["TeamUpItemEntity"])  # 获取当前队员数量
+            for jc in i["TeamUpItemEntity"]:
+                if (jc["AgreeState"] == 0):
+                    pass
+                elif (jc["AgreeState"] in [1, 2]):  # 如果该入队申请请求有被操作
+                    listNum -= 1  # 则减少
+            if listNum == len(i["TeamUpItemEntity"]):  # 如果该申请入队请求状态为0 且没减少
+                for jc in range(0, len(i["TeamUpItemEntity"])):
+                    if (i["TeamUpItemEntity"][jc]["AgreeState"] == 0) and (
+                    i["TeamUpItemEntity"][jc]["ToUserId"]) == add1:  # 申请记录未操作且发送给的申请人是当前toUserid
+                        #print(i["TeamUpItemEntity"][jc]["TeamUpAgreeStateId"])
+                        statusId.append(i["TeamUpItemEntity"][jc]["TeamUpAgreeStateId"])
+        return statusId
+    def applyTeam(self, method=None, need=None, thisApi=None, key=None, add1=None):  # 多人加入队伍(3)
+        teamName, toUserId = ["c1@3202.com", "c2@3202.com"], [43, 44]
+        key = eval(key)
+        UserName, UserId = key["UserName"], key['UserId']
+        count = 0  # 用于统计发送申请入队成功的人数
+        for i in UserName:
+            self.longin1(method="UserLogin", thisApi={"UserName": i, "password": "a123456"})  # 登录 获取到用户token,userid
+            Parameter = {"ToUserId": toUserId[0], "ToUserMessage": str(i) + "发送的入队申请"}  # 添加接口需要的参数
+            self.info.update(Parameter)  # 将参数放入这次请求中
+            result = self.TeamApply(thisApi=self.info)  # 发送的组队申请的相应接口不为None 则申请成功
+            if result != None:
+                count += 1
+        TeamUpAgreeStateId =[]
+        for i in range(len(toUserId)):
+            self.longin1(method="UserLogin",thisApi={"UserName": teamName[i], "password": "a123456"})  # 登录 获取到用户token,userid
+            result = self.TeamUpStateOperation(key=UserId[:count], add1=toUserId[i])  # 调用该方法 获取申请入队信息
+            TeamUpAgreeStateId.append(result)
 
+        for i in range(len(toUserId)):
+            self.longin1(method="UserLogin", thisApi={"UserName": teamName[i], "password": "a123456"})
+            for id in TeamUpAgreeStateId[i]:
+                ret = self.body_headers(method=method,thisApi={"TeamUpAgreeStateId":id,"AgreeState":1})
+                result = self.sendRequest.Post(ret[0],ret[1])
 
-
+        return result
